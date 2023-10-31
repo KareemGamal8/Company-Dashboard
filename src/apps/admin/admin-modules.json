@@ -1,0 +1,55 @@
+{
+  "path": "/",
+  "name": "admin",
+  "modules": [
+    {
+      "entry": ["/settings"],
+      "name": "settings"
+    },
+    {
+      "entry": ["/administrators"],
+      "name": "administrators"
+    },
+    {
+      "entry": ["/check-in-history"],
+      "name": "checkInHistory"
+    },
+    {
+      "entry": [
+        "/login",
+        "/reset-password",
+        "/forgot-password",
+        "/verify-Password"
+      ],
+      "name": "account"
+    },
+    {
+      "entry": ["/", "/404"],
+      "name": "home"
+    },
+    {
+      "entry": ["/users-table"],
+      "name": "users-table"
+    },
+    {
+      "entry": ["/branches"],
+      "name": "branches"
+    },
+    {
+      "entry": ["/employees"],
+      "name": "employees"
+    },
+    {
+      "entry": ["/profile"],
+      "name": "profile"
+    },
+    {
+      "entry": ["/profile"],
+      "name": "profile"
+    },
+    {
+      "entry": ["/staff-longue-screen"],
+      "name": "staff-longue-screen"
+    }
+  ]
+}

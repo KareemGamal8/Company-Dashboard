@@ -1,0 +1,5 @@
+{
+    "app": "admin",
+    "routeMethod": "publicRoutes",
+    "style": "all"
+}

@@ -1,0 +1,5 @@
+{
+    "hooks": {
+        "pre-commit": "echo "Husky" && yarn fix --color && echo 'Updating Git files II' && git add ."
+    }
+}

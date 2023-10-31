@@ -1,0 +1,16 @@
+.scroll-paper {
+  position: relative;
+  /* max-height: 800px; */
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #5b220b;
+  font-weight: 600;
+}
+
+.scroll-content {
+  padding: 5px 20px;
+  /* overflow-y: auto; */
+  height: calc(100%);
+}

@@ -1,0 +1,23 @@
+#!/bin/sh
+commit=$1;
+
+echo "PLease enter your commit message:"
+read message;
+
+    echo "$(tput setaf 3) Checking files for fixes...$(tput sgr0)";
+yarn fix
+failed=$?;
+
+if [[ $failed == 1 ]] 
+then
+    echo "Fixing failed, please fix before pushing";
+    exit 1;    
+else
+    echo "$(tput setaf 2)Looks like you have fixed everything, pushing now...$(tput sgr0)";
+    git add .
+    git commit -m "$message"
+    git pull
+    git push
+    
+    echo "$(tput setaf 2) Repository has been updated successfully. $(tput sgr0)";
+fi

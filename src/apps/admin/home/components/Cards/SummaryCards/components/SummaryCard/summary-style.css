@@ -1,0 +1,93 @@
+.wrapper {
+  border: 1px solid #afadad;
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.child {
+  position: absolute;
+  height: 0;
+  background-color: #36ce9b;
+  width: 0;
+  transition:
+    width 0.4s ease-in-out,
+    height 0.4s ease-in-out,
+    top 0.4s,
+    left 0.4s;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.card {
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  gap: 1rem;
+  border-radius: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  text-align: start;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-content p {
+  transition: color 0.4s;
+}
+
+.card-content h3 {
+  font-size: 1.6rem;
+  margin: 0;
+  transition: color 0.4s;
+}
+
+.card-image {
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.card-image img {
+  width: 2.5rem;
+}
+
+.card-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.4rem;
+  width: 70%;
+}
+
+.card:hover .progress-bar {
+  background-color: transparent !important;
+}
+
+.card:hover .filler {
+  background-color: #fff !important;
+}
+
+.card:hover .card-content {
+  color: #fff;
+}
+
+.card:hover .card-content p {
+  color: #fff;
+}
+
+.card:hover .card-image {
+  background: #fff !important;
+}

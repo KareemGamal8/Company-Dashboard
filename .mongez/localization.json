@@ -1,0 +1,9 @@
+{
+    "groups": [],
+    "except": [],
+    "namespace": "",
+    "privateNamespace": false,
+    "localizationDirectory": "./src/shared/localization",
+    "cloudLocalizationUrl": "",
+    "localizationPost": "./localization-post.json"
+}

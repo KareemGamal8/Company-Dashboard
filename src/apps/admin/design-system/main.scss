@@ -1,0 +1,45 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .mantine-AppShell-main {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+#file-input {
+  width: 67px;
+  position: absolute;
+  height: 65px;
+  top: -54px;
+  left: 1px;
+  opacity: 0;
+}
